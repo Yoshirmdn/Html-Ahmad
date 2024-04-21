@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - User</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="bg-[#343434] flex items-center justify-center h-screen">
+    <div class="form-container max-w-lg mx-auto my-10 bg-[#343434] p-8 rounded-xl ">
+      <form action="#" method="POST" class="text-center">
+        <h1 class="text-4xl font-medium text-white italic">Rent Out</h1>
+        <p class="text-white pt-10 text-center italic">Renting out a vehicle makes it easier for drivers who do not have a vehicle to be able to work. </p>
+        <input type="text" name="username" required placeholder="Your Name" class="text-white py-3 border border-none bg-[#262626] rounded-lg px-3 w-1/2 focus:outline-none hover:shadow mx-auto">
+        <button id="dropdownInformationButton" data-dropdown-toggle="dropdownInformation"
+          class="text-white bg-[#262626]  font-medium rounded-lg text-sm px-5 py-2.5 text-start inline-flex items-center justify-center w-1/2 mt-2 mx-auto"
+          type="button">Vehicle Information
+          <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 1 4 4 4-4" />
+          </svg>
+        </button>
+        <button id="dropdownInformationButton" data-dropdown-toggle="dropdownInformation"
+          class="text-white bg-[#262626]  font-medium rounded-lg text-sm px-5 py-2.5 text-start inline-flex items-center justify-center w-1/2 mt-2 mx-auto"
+          type="button">Contact Information
+          <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 1 4 4 4-4" />
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

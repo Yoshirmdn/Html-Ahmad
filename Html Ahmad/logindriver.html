@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Driver</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="bg-[#343434] flex items-center justify-center h-screen">
+        <div class="form-container max-w-lg mx-auto my-10 bg-[#343434] p-8 rounded-xl ">
+            <form action="#" method="POST">
+                <h1 class="text-4xl font-medium text-center text-white italic">Login</h1>
+                <p class="text-white pt-10 text-center italic">Welcome back drivers. Hurry up we need you.</p>
+                <label for="username">
+                    <p class="font-medium pb-2 text-white pt-1">Username</p>
+                    <input type="text" name="username" required placeholder="Masukkan Username"
+                        class="text-white w-full py-3 border bg-[#343434] rounded-lg px-3 focus:outline-none hover:shadow">
+                </label>
+                <label for="filr">
+                    <p class="font-medium text-white pb-2">Driver License</p>
+                    <input type="file" name="driver_license" required placeholder="Masukkan Sim Anda"
+                        class="w-full py-3 border bg-[#262626] text-white rounded-lg px-3 focus:outline-none focus:border-slate-500 hover:shadow">
+                </label>
+                <button type="submit" name="submit" value="Login"
+                class="form-btn w-full py-3  mt-3 font-medium text-white bg-[#363636] shadow-md rounded-md inline-flex space-x-2 items-center justify-center">
+                <span>Login</span>
+            </button>
+        </form>
+    </div>
+
+</body>
+
+</html>
