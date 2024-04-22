@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Information</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .floating-div {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+        }
+        .container {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex flex-col justify-center items-center h-screen bg-[#343434]">
+        <div class="relative w-full h-full container">
+            <iframe class="w-full h-full"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12080.73732861526!2d-74.0059418!3d40.7127847!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM40zMDA2JzEwLjAiTiA3NMKwMjUnMzcuNyJX!5e0!3m2!1sen!2sus!4v1648482801994!5m2!1sen!2sus"
+                frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div class="mx-auto max-w-md rounded-2xl bg-[#343434] floating-div opacity-80">
+                <div class="flex flex-col gap-2 p-8">
+                    <form class="max-w-md mx-auto mt-5">
+                        <!-- button rent -->
+                        <button
+                            class="bg-[#FFB72E] rounded-lg p-2 shadow-md text-xl font-semibold mb-2 text-white text-center">
+                            Ready for the Go
+                        </button>
+                        <div class="mb-4">
+                            <label for="pickup-location" class="sr-only">Pick Up Location</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                    <svg class="w-4 h-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 20 20" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 19l-6-6m0-7a7 7 0 1 0-14 0 7 7 0 0 0 14 0zM10 12a2 2 0 100-4 2 2 0 0 0 0 4z" />
+                                    </svg>
+                                </div>
+                                <input type="text" id="pickup-location"
+                                    class=" block w-full pl-10 pr-4 py-3 border rounded-lg bg-gray-50 text-sm text-gray-900 focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="Pick Up Location" required />
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="destination" class="sr-only">Destination</label>
+                            <div class="relative">
+                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                    <svg class="w-4 h-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 20 20" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 19l-6-6m0-7a7 7 0 1 0-14 0 7 7 0 0 0 14 0zM10 12a2 2 0 100-4 2 2 0 0 0 0 4z" />
+                                    </svg>
+                                </div>
+                                <input type="text" id="destination"
+                                    class=" block w-full pl-10 pr-4 py-3 border rounded-lg bg-gray-50 text-sm text-gray-900 focus:ring-blue-500 focus:border-blue-500"
+                                    placeholder="Destination" required />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
