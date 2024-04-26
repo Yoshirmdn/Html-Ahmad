@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class=bg-white flex flex-col justify-center items-center h-screen mb-2">
+    <div class="bg-[#262626] p-6 rounded-t-3xl shadow-md w-full h-full mt-5 grid justify-items-center">
+        <!-- status order asep selesai -->
+        <div class="flex justify-center items-center mt-5">
+            <div class="flex flex-col justify-center items-center mt-40 mb-96">
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="col-span-1">
+                    <h1 class="text-white font-bold text-center text-4xl mb-4">Rent Vehicle</h1>
+                        <div class="container mx-auto px-4 py-8 max-w-md">
+                            <div class="grid grid-cols-1 gap-6">
+                                <div class="bg-white rounded-lg p-6 shadow-md">
+                                    <h2 class="text-lg font-semibold mb-2">Zx-25r</h2>
+                                    <img src="https://source.unsplash.com/random/men" alt="profile"
+                                        class="w-40 h-40 rounded-lg mx-auto mb-4">
+                                    <p class="text-gray-600">Owner</p>
+                                    <input type="text" id="totalPaid" name="totalPaid" class="w-full bg-[#343434] rounded-lg text-white font-bold px-5 py-2 mt-2" value="Sigit Rendang">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-span-1">
+                        <div class="relative w-full h-96 bg[#262626]">
+                            <div class="flex justify-between">
+                                <input type="text" id="totalPaid" name="totalPaid" class="w-full bg-[#FFB72E] rounded-lg text-white font-bold px-5 py-2 mt-2" value="5 Miles From You">
+                            </div>
+                            <p class="text-white font-normal">Contact the relevant contact to be able to rent a vehicle.</p>
+                              <form action="#" method="POST">
+                                  <label for="address">
+                                      <p class="font-medium pb-2 text-white pt-1">Tenant address </p>
+                                      <input type="text" name="address" required placeholder="**********"
+                                          class="text-white w-full py-3 border bg-[#343434] rounded-lg px-3 focus:outline-none hover:shadow">
+                                  </label>
+                                  <label for="number">
+                                      <p class="font-medium pb-2 text-white pt-1">Date Tenant contact </p>
+                                      <input type="date" name="contact" required placeholder="**********"
+                                          class="text-white w-full py-3 border bg-[#343434] rounded-lg px-3 focus:outline-none hover:shadow">
+                                  </label>
+                                  <label for="email">
+                                      <p class="font-medium text-white pb-2">Tenant email </p>
+                                      <input type="email" name="email" required placeholder="**********"
+                                          class="text-white w-full py-3 border bg-[#343434] rounded-lg px-3 focus:outline-none hover:shadow">
+                                  </label>
+                                  <button type="submit" name="submit" value="Login"
+                                  class="form-btn w-full py-3  mt-3 font-medium text-white bg-[#343434] shadow-md rounded-md inline-flex space-x-2 items-center justify-center">
+                                  <span>Done</span>
+                              </button>
+                          </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+</body>
+
+</html>

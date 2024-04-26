@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Driver</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#343434] flex justify-center items-center h-screen">
+    <div class="relative w-full h-full container">
+    <h1 class="text-white italic font-bold text-4xl">Service Order</h1>
+    <div class="mx-auto max-w-md rounded-2xl bg-[#262626] floating-div opacity-80">
+        <div class="flex flex-col gap-2 p-8">
+            <form class="max-w-md mx-auto mt-5">
+                <h1 class="text-white text-center mb-3">Example One</h1>
+                <!-- button rent -->
+                <button
+                    class="bg-[#FFB72E] rounded-lg p-2 shadow-md text-xl font-semibold mb-2 text-white text-center">
+                    Ready to Go
+                </button>
+                <button
+                    class="bg-[#ffffff] rounded-lg p-2 shadow-md font-semibold mb-2 text-black text-center italic">
+                   Travel Time  
+                </button>
+                <div class="mb-4">
+                    <label for="pickup-location" class="sr-only">Pick Up Location</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg class="w-4 h-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 20 20" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 19l-6-6m0-7a7 7 0 1 0-14 0 7 7 0 0 0 14 0zM10 12a2 2 0 100-4 2 2 0 0 0 0 4z" />
+                            </svg>
+                        </div>
+                        <input type="text" id="pickup-location"
+                            class=" block w-full pl-10 pr-4 py-3 border rounded-lg bg-gray-50 text-sm text-gray-900 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="Pick Up Location" required />
+                    </div>
+                </div>
+                <div class="mb-4">
+                    <label for="destination" class="sr-only">Destination</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg class="w-4 h-4 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 20 20" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 19l-6-6m0-7a7 7 0 1 0-14 0 7 7 0 0 0 14 0zM10 12a2 2 0 100-4 2 2 0 0 0 0 4z" />
+                            </svg>
+                        </div>
+                        <input type="text" id="destination"
+                            class=" block w-full pl-10 pr-4 py-3 border rounded-lg bg-gray-50 text-sm text-gray-900 focus:ring-blue-500 focus:border-blue-500"
+                            placeholder="Destination" required />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
